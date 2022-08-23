@@ -1,5 +1,11 @@
 import generateOnLoad from './modules/pageload';
 
+function loadMenu(){
+    console.log("nopasanada")
+}
+function loadAbout(){
+    console.log("nopasanada")
+}
 
 
 function test(){
@@ -10,34 +16,21 @@ test();
 
 generateOnLoad();
 
+function hit(){
+    console.log("Hit!");
+}
 
 
+function addNav() {
+    console.log("addnav up??")
+    const homeButton = document.getElementById('navHome');
+    homeButton.style.opacity = "50%";
+    // const menuButton = document.getElementById('navMenu');
+    // const aboutButton = document.getElementById('navAbout');
+  
+    // homeButton.addEventListener('click', hit());
+    // menuButton.addEventListener('click', loadMenu);
+    // aboutButton.addEventListener('click', loadAbout);
+}
 
-
-
-
-
-// from example
-// 21 lines (18 sloc)  586 Bytes
-
-// import loadPage from './modules/initial-page-load';
-// import loadHome from './modules/home';
-// import loadMenu from './modules/menu';
-// import loadContact from './modules/contact';
-
-// init();
-
-// function addNavEvents() {
-//   const homeBtn = document.getElementById('home');
-//   const menuBtn = document.getElementById('menu');
-//   const contactBtn = document.getElementById('contact');
-
-//   homeBtn.addEventListener('click', loadHome);
-//   menuBtn.addEventListener('click', loadMenu);
-//   contactBtn.addEventListener('click', loadContact);
-// }
-// function init() {
-//   loadPage();
-//   loadHome();
-//   addNavEvents();
-// }
+addNav();

@@ -9,7 +9,7 @@
     justify-content: center;
 }
 .container{
-
+/* GENERAL CONTAINER RULES HERE IF NECESSARY */
 
 }
 
@@ -27,7 +27,7 @@
     align-content: center;
 }
 h2{
-    color: rgb(4, 255, 0);
+    color: rgb(147, 23, 29);
     font-size: 3em;
 }
 
@@ -43,6 +43,16 @@ h2{
     justify-items: center;
     align-items: bottom;
 }
+.grave{
+    transition: transform 1s;
+    /* transform: translateY(50%); */
+}
+
+#plot0 img{
+    -webkit-mask-image: (url(../src/Images/square.png), skyblue);
+    mask-image: (url(../src/Images/square.png), skyblue);
+}
+
 
 .navButton{
     justify-self: center;

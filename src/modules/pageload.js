@@ -8,7 +8,7 @@ function generateOnLoad(){
             generateNav.classList.add('nav');
             generateNav.classList.add('container');
         grab.appendChild(generateNav);
-    console.log("title?");
+  
 
                                             // GENERATE RESTRAURANT NAME
     const generateTitle = document.createElement('h2');
@@ -23,24 +23,29 @@ function generateOnLoad(){
                                             // GENERATE AND POPULATE BUTTONS
                                 for (let i=0; i<3; i++){
                                                         let grave = document.createElement("div");
+                                                        let gravenumber = `plot${i}`;
                                                         grave.classList.add('grave');
-                                                        grave.innerHTML=`<img src = "../src/Images/graveicon.png"></img>`;
+                                                        grave.innerHTML="<img src = '../src/Images/graveicon.png' id=`grave${i}`></img>";
                                                         buttonBox.appendChild(grave);
+                                                        
+                                                        grave.setAttribute('id', gravenumber)
                                                         // grave.setAttribute(transform, translateX(2em));
+                                                        
                                                         }
                                 for (let i=0; i<3; i++){
-                                    console.log(i);
-                                    console.log(titleArray[i]);
                                             let assignButtonName = titleArray[i]
                                             let buttonName = `nav${assignButtonName}`;
-                                    console.log(`Button name set to ${buttonName}`);
+                                    
                                             let button=document.createElement("button")
                                             button.classList.add('navButton')
                                             button.setAttribute('id', buttonName);
                                             button.textContent=assignButtonName;
                                     console.log(button.attributes.id)
                                             buttonBox.appendChild(button);
+                                            button.addEventListener('click', () =>console.log("testetz"));
+                                          
                                 }
+                              
 
     const generateDisp = document.createElement("div");
             generateNav.setAttribute('id', 'display');
