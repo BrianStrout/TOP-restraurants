@@ -28,7 +28,7 @@ function generateOnLoad(){
                                                         let gravenumber = `plot${i}`;
                                                         grave.classList.add('grave');
                                                         let gg = `grave${i}`
-                                                        grave.innerHTML="<img src = '../src/Images/graveicon.png' id="+gg+" data-link="+i+"></img>";
+                                                        grave.innerHTML="<img src = '../src/Images/graveicon.png' id="+gg+" data-link= "+i+" class='graveIcon unfocusedGrave'></img>";
                                                         buttonBox.appendChild(grave);            
                                                         grave.setAttribute('id', gravenumber)
                                                         // grave.setAttribute(transform, translateX(2em));

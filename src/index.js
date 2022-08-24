@@ -44,15 +44,38 @@ function iStyleButton(ev){
     console.log(ev.id+"is hit");
     let deathLink = ev.dataset.link;
     let target= ev;
-    // let parent = target.parentElement;
+ 
     let parentDiv = target.parentElement;
-    let grabGraves = parentDiv.getElementsByClassName('grave');
+    let grabGraveIcons = parentDiv.getElementsByClassName('graveIcon');
+                for(let g =0; g<grabGraveIcons.length;g++){
+                    grabGraveIcons[g].classList.remove('focusedGrave');
+                    grabGraveIcons[g].classList.add('unfocusedGrave');
+
+            if(grabGraveIcons[g].dataset.link===deathLink){
+                grabGraveIcons[g].classList.add('focusedGrave');
+                grabGraveIcons[g].classList.remove('unfocusedGrave');
+
+            }
+                  
+                    // grabGraveIcons[g].classList.remove('unfocusedGrave');
+                }
+    // console.log(grabGraveIcons);
+    let targettedGrave = grabGraveIcons[deathLink];
+                // targettedGrave.classList.add('focusedGrave')
+
+
     let pullUp= document.querySelectorAll("[data-link='"+deathLink+"']");
-    let targetGrave= pullUp[0];
-    console.log(targetGrave);
+
+// styling the button
+
     let grabButtons = document.getElementsByClassName('navButton');
     for(let i=0; i<grabButtons.length; i++){
-            grabButtons[i].classList.remove('focusedButton');   
-    }
+            grabButtons[i].classList.remove('focusedButton'); 
+                    if(grabButtons[i].id===ev.id){
+                        grabButtons[i].classList.add('focusedButton'); 
+                    }  
+                    }
 }
+
+
 // iStyleButton();

@@ -3,7 +3,8 @@
     margin: 0;
 }
 .hidden{
-    visibility: hidden;
+    /* visibility: hidden; */
+    opacity: 4%;
 }
 
 
@@ -73,22 +74,34 @@ h2{
     align-items: bottom;
 }
 .grave{
-    transition: transform 1s;
-    /* transform: translateY(50%); */
+    /* transition: transform 1s; */
+
+}
+.graveIcon{
+    transition: opacity 0s;
+    transition: transform .2s;
+}
+.unfocusedGrave{
+    transform: translateY(-140px);
+}
+.focusedGrave{
+    opacity: 100%;
+}
+.focusedButton{
+    color: brown;
+    border: 3px solid brown;
+    box-shadow: 5px 5px;
 }
 
-.grave img{
-    transform: translateY(-100px);
-    transition: transform 1s;
-}
+
+
+
 
 
 #plot0 img{
     -webkit-mask-image: (url(../src/Images/square.png), skyblue);
     mask-image: (url(../src/Images/square.png), skyblue);
 }
-
-
 .navButton{
     justify-self: center;
     align-self: top;
@@ -97,21 +110,17 @@ h2{
     border: 1px solid black;
     border-radius: .25em;
 }
-
 #display{
     width: 60%;
     /* background-color: rgba(250, 235, 215, 0.531); */
     border-radius: .5em;
     /* padding: .5em; */
 }
-
 .menuHeader{
     display: block;
     background-color: blue;
     font-size: 2em;
 }
-
-
 .menuImage{
     display: inline-block;
     opacity: 50%;
@@ -124,12 +133,7 @@ h2{
 .h4{
     font-size: 2em;
 }
-
 .employeeSection{
     padding: 1em;
 }
 
-
-.target{
-    opacity: 50%;
-}
