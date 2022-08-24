@@ -27,12 +27,11 @@ function generateOnLoad(){
                                                         let grave = document.createElement("div");
                                                         let gravenumber = `plot${i}`;
                                                         grave.classList.add('grave');
-                                                        grave.innerHTML="<img src = '../src/Images/graveicon.png' id=`grave${i}`></img>";
-                                                        buttonBox.appendChild(grave);
-                                                        
+                                                        let gg = `grave${i}`
+                                                        grave.innerHTML="<img src = '../src/Images/graveicon.png' id="+gg+"></img>";
+                                                        buttonBox.appendChild(grave);            
                                                         grave.setAttribute('id', gravenumber)
                                                         // grave.setAttribute(transform, translateX(2em));
-                                                        
                                                         }
                                 for (let i=0; i<3; i++){
                                             let assignButtonName = titleArray[i]
@@ -42,17 +41,19 @@ function generateOnLoad(){
                                             button.classList.add('navButton')
                                             button.setAttribute('id', buttonName);
                                             button.textContent=assignButtonName;
-                                    console.log(button.attributes.id)
+                                //     console.log(button.attributes.id)
                                             buttonBox.appendChild(button);
-                                        //     button.addEventListener('click', hit());
-                                          
                                 }
                               
 
+
     const generateDisp = document.createElement("div");
-            generateNav.setAttribute('id', 'display');
-            generateNav.classList.add('display');
-            generateNav.classList.add('container');
+            generateDisp.setAttribute('id', 'display');
+            generateDisp.classList.add('display');
+            generateDisp.classList.add('container');
+            generateDisp.textContent = "";
+                        grab.appendChild(generateDisp);
+
 
 
 

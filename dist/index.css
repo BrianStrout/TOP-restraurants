@@ -1,31 +1,52 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.hidden{
+    visibility: hidden;
+}
+
+
+
+
+
+
 body{
+    height: 100%;
     display: flex;
     justify-content: center;
+    /* align-items: stretch; */
+    background-color: black; 
 }
 #content{
     align-self: center;
     background-image: url('../src/Images/unsplash.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
     background-size: cover;
     background-color: brown;
     margin: 0;
     width: 80%;
-    height: 100vh;
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: top;
-    align-items: top;
-    align-content: top;
+    align-items: center;
+    align-content: center;
 }
 .container{
 /* GENERAL CONTAINER RULES HERE IF NECESSARY */
-
+background-color: rgba(250, 235, 215, 0.701);
+border-radius: .5em;
+margin: .5em;
+padding: .5em 1em;
 }
 
 #navigation{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    height: 20%;
+    /* height: 15%; */
 }
 
 .restraurantName{
@@ -42,7 +63,7 @@ h2{
 .buttonBox{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
+    grid-template-rows: 1fr .5fr;
     gap: 0 .5em;
 }
 .buttonBox div{
@@ -55,6 +76,12 @@ h2{
     transition: transform 1s;
     /* transform: translateY(50%); */
 }
+
+.grave img{
+    transform: translateY(-100px);
+    transition: transform 1s;
+}
+
 
 #plot0 img{
     -webkit-mask-image: (url(../src/Images/square.png), skyblue);
@@ -69,4 +96,35 @@ h2{
     height: 1.5em;
     border: 1px solid black;
     border-radius: .25em;
+}
+
+#display{
+    width: 60%;
+    /* background-color: rgba(250, 235, 215, 0.531); */
+    border-radius: .5em;
+    /* padding: .5em; */
+}
+
+.menuHeader{
+    display: block;
+    background-color: blue;
+    font-size: 2em;
+}
+
+
+.menuImage{
+    display: inline-block;
+    opacity: 50%;
+    width: 10em;
+}
+.menuFood{
+    display: inline-block;
+    text-decoration: underline;
+}
+.h4{
+    font-size: 2em;
+}
+
+.employeeSection{
+    padding: 1em;
 }
