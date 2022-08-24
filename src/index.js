@@ -1,12 +1,13 @@
 import generateOnLoad from './modules/pageload';
+import loadHome from './modules/home';
+
 
 function loadMenu(){
-    console.log("nopasanada")
+    console.log("menu- nopasanada")
 }
 function loadAbout(){
-    console.log("nopasanada")
+    console.log("about- nopasanada")
 }
-
 
 function test(){
 console.log("javascript running");
@@ -24,13 +25,12 @@ function hit(){
 function addNav() {
     console.log("addnav up??")
     const homeButton = document.getElementById('navHome');
-    homeButton.style.opacity = "50%";
-    // const menuButton = document.getElementById('navMenu');
-    // const aboutButton = document.getElementById('navAbout');
+    const menuButton = document.getElementById('navMenu');
+    const aboutButton = document.getElementById('navAbout');
   
-    // homeButton.addEventListener('click', hit());
-    // menuButton.addEventListener('click', loadMenu);
-    // aboutButton.addEventListener('click', loadAbout);
+    homeButton.addEventListener('click', ()=>{ loadHome()});
+    menuButton.addEventListener('click', ()=>{  loadMenu()});
+    aboutButton.addEventListener('click',()=>{ loadAbout()});
 }
 
 addNav();

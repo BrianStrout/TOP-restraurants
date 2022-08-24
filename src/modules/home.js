@@ -1,91 +1,38 @@
 function generateHomeSection(){
-
+    console.log("generate home");
 // do i need a clear here or else?
-let PROD = 
-pcreate Selection
-add class
-
-
-
-create title
-classList
-text content
-appendChild
-
-create p 
-class classList
-text content
-
-
-appendChild
-
-return PROD
-
-}
-
-function activeButton(id){
-    find active button class removes instanceof
-    assigns it to current id button
+// let PROD = 
+// pcreate Selection
+// add class
+// create title
+// classList
+// text content
+// appendChild
+// create p 
+// class classList
+// text content
+// appendChild
+// return PROD
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-function createAboutSection() {
-    const about = document.createElement('section');
-    about.classList.add('section');
+function loadHome(){
+console.log("home- nopasanada");
+        const content= document.getElementById('content');
+        const homeDisplay = document.createElement('div')
+        homeDisplay.textContent="HI!";
+        content.appendChild(homeDisplay);
+  //   const content = document.getElementById('tab-content');
+  //   content.classList.add('flex-lay');
+  //   content.classList.remove('grid-lay');
   
-    const title = document.createElement('h2');
-    title.classList.add('section-title');
-    title.textContent = 'About';
+  //   content.textContent = '';
   
-    about.appendChild(title);
+  //   const aboutSection = createAboutSection();
   
-    const para = document.createElement('p');
-    para.classList.add('section-description');
-    para.textContent =
-      'Star Food has The best food from all Galaxies Lorem ipsum dolor sitamet consectetur adipisicing elit. Animi in, neque, dignissimosperspiciatis illo deserunt tetur adipisicing elit. Animi in, neque,dignissimos perspiciatis illo deserunt adipisicing elit. Animi in,neque, dignissimos perspiciatis illo deserunt';
+  //   setBtnActive('home');
   
-    about.appendChild(para);
-    return about;
-  }
-  
-  function setBtnActive(id) {
-    const activeBtn = document.querySelector('.tab.active');
-    if (activeBtn) activeBtn.classList.remove('active');
-  
-    const homeBtn = document.getElementById(id);
-    homeBtn.classList.add('active');
-  }
-  
-  function loadHome() {
-    const content = document.getElementById('tab-content');
-    content.classList.add('flex-lay');
-    content.classList.remove('grid-lay');
-  
-    content.textContent = '';
-  
-    const aboutSection = createAboutSection();
-  
-    setBtnActive('home');
-  
-    content.appendChild(aboutSection);
+  //   content.appendChild(aboutSection);
   }
   
   export default loadHome;

@@ -1,3 +1,5 @@
+
+
 function generateOnLoad(){
     const grab = document.getElementById("content");
     const titleArray = ["Home", "Menu", "About"];
@@ -42,7 +44,7 @@ function generateOnLoad(){
                                             button.textContent=assignButtonName;
                                     console.log(button.attributes.id)
                                             buttonBox.appendChild(button);
-                                            button.addEventListener('click', () =>console.log("testetz"));
+                                        //     button.addEventListener('click', hit());
                                           
                                 }
                               
@@ -51,6 +53,8 @@ function generateOnLoad(){
             generateNav.setAttribute('id', 'display');
             generateNav.classList.add('display');
             generateNav.classList.add('container');
+
+
 
 }
 
