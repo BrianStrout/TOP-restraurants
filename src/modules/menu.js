@@ -22,28 +22,57 @@ const menuChicwings = {
                     itemI: 'ChickenWings',
                     image: "",
                     cat: 'Meals',
-                    description: "We cook our bacon half way, pull it out and THEN soak our bacon in garlic butter, and THEN finish it off; making the world's tasty way to piss off your heart.",
+                    description: "Wings soaked in my father's disappoin... I mean secret sauce. My family's secret sauce.",
                     price: 4.34,    
                 }
 const menuBurger= {
 
-                    item: 'Chicken Wings',
-                    itemI: 'ChickenWings',
+                    item: 'Burger',
+                    itemI: 'Burger',
                     image: "",
                     cat: 'Meals',
-                    description: "We cook our bacon half way, pull it out and THEN soak our bacon in garlic butter, and THEN finish it off; making the world's tasty way to piss off your heart.",
+                    description: "Cow a bunga",
                     price: 4.34,    
                 }
 const menuRibs = {
 
-                    item: 'Chicken Wings',
-                    itemI: 'ChickenWings',
+                    item: 'Ribs',
+                    itemI: 'Ribs',
                     image: "",
                     cat: 'Meals',
-                    description: "We cook our bacon half way, pull it out and THEN soak our bacon in garlic butter, and THEN finish it off; making the world's tasty way to piss off your heart.",
+                    description: "Rib a dib a dib dib",
                     price: 4.34,    
                 }
-    let menuList =[menuBacon, menuDeviled, menuChicwings, menuBurger, menuRibs]
+
+const menuSCCroissant = {
+
+                    item: 'Strawberry Cream Cheese Croissant',
+                    itemI: 'SCCroissant',
+                    image: "",
+                    cat: 'Desserts',
+                    description: "uhh. My favorite wet",
+                    price: 4.34,    
+                }
+const menuCheeseCake = {
+
+                    item: 'Deep Fried Cheesecake Chimichanga',
+                    itemI: 'CheeseCake',
+                    image: "",
+                    cat: 'Desserts',
+                    description: "uhh. My favorite dry",
+                    price: 4.34,    
+                }
+const menuWhiteLie = {
+
+                    item: 'White Lie',
+                    itemI: 'WhiteLie',
+                    image: "",
+                    cat: 'Drinks',
+                    description: "Favorite twist on a margarita",
+                    price: 4.34,    
+                }
+
+    let menuList =[menuBacon, menuDeviled, menuChicwings, menuBurger, menuRibs, menuSCCroissant, menuCheeseCake]
     let menuCategories =['Appetisers', 'Meals', 'Desserts', 'Drinks',]
                                                 // const content= document.getElementById('content');
             const homeDisplay = document.getElementById('display');
