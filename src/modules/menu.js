@@ -72,7 +72,7 @@ const menuWhiteLie = {
                     price: 4.34,    
                 }
 
-    let menuList =[menuBacon, menuDeviled, menuChicwings, menuBurger, menuRibs, menuSCCroissant, menuCheeseCake]
+    let menuList =[menuBacon, menuDeviled, menuChicwings, menuBurger, menuRibs, menuSCCroissant, menuCheeseCake, menuWhiteLie];
     let menuCategories =['Appetisers', 'Meals', 'Desserts', 'Drinks',]
                                                 // const content= document.getElementById('content');
             const homeDisplay = document.getElementById('display');
